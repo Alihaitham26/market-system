@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>market system</title>
+</head>
+<body>
+    <div class="container">
+        <h1><span>m</span>arket system</h1>
+        <h4 id="money">money you got:0</h4>
+    </div>
+    <div class="container">
+        <form method="post">
+            <input type="text" placeholder="name" id="name" required>
+            <input type="number" placeholder="price" id="price" required>
+            <input type="number" placeholder="code" id="code" required>
+            <input type="number" placeholder="amount" id="amount" required>
+        </form>
+        <p id="warning" class="warning">Invalid input</p>
+        <button class="add" id="add" onclick="addcheck()">add</button>
+    </div>
+    <div class="container">
+        <table id="table">
+            <tr>
+                <th>update</th>
+                <th>name</th>
+                <th>price</th>
+                <th>code</th>
+                <th>amount</th>
+                <th>sold</th>
+            </tr>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
